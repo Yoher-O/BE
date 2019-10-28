@@ -13,7 +13,7 @@ cursoCtrl.createCurso = async (req, res) => {
 }
 
 cursoCtrl.deleteCurso = async (req, res) => {
-  const item = model.deleteOne({
+  const item = await model.deleteOne({
     _id: req.params.id
   })
   res.json(item);

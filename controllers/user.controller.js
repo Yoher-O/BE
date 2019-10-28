@@ -13,7 +13,7 @@ userCtrl.createUser = async (req, res) => {
 }
 
 userCtrl.deleteUser = async (req, res) => {
-  const item = model.deleteOne({
+  const item = await model.deleteOne({
     _id: req.params.id
   })
   res.json(item);

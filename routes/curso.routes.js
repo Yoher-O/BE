@@ -5,7 +5,7 @@ const curso = require('../controllers/curso.controller')
 router.get('/cursos', curso.getCursos);
 router.post('/cursos', curso.createCurso);
 router.get('/cursos/:id', curso.getCurso);
-router.delete('/cursos', curso.deleteCurso);
+router.delete('/cursos:id', curso.deleteCurso);
 router.patch('/cursos/:id', curso.updateCurso);
 router.get('/cursos/profesor/:id', curso.getCursoByProfesor);
 

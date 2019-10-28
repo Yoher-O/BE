@@ -13,7 +13,7 @@ matriculaCtrl.createMatricula = async (req, res) => {
 }
 
 matriculaCtrl.deleteMatricula = async (req, res) => {
-  const item = model.deleteOne({
+  const item = await model.deleteOne({
     _id: req.params.id
   })
   res.json(item);

@@ -13,7 +13,7 @@ roomCtrl.createRoom = async (req, res) => {
 }
 
 roomCtrl.deleteRoom = async (req, res) => {
-  const item = model.deleteOne({
+  const item = await model.deleteOne({
     _id: req.params.id
   })
   res.json(item);
