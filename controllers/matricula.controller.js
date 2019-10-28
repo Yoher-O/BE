@@ -1,4 +1,4 @@
-const model = require('../mdoels/Matricula.model');
+const model = require('../models/Matricula.model');
 const matriculaCtrl = {};
 
 matriculaCtrl.getMatriculas = async (req, res) => {

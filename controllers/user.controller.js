@@ -1,4 +1,4 @@
-const model = require('../mdoels/user.model');
+const model = require('../models/user.model');
 const userCtrl = {};
 
 userCtrl.getUsers = async (req, res) => {

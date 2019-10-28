@@ -1,4 +1,4 @@
-const model = require('../mdoels/curso.model');
+const model = require('../models/curso.model');
 const cursoCtrl = {};
 
 cursoCtrl.getCursos = async (req, res) => {

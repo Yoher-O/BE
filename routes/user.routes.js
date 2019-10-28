@@ -9,7 +9,7 @@ const room = require('../controllers/room.controller')
 router.get('/users', user.getUsers);
 router.post('/users', user.createUser);
 router.get('/users/:id', user.getUser);
-router.delete('/users', user.deleteUser);
+router.delete('/users/:id', user.deleteUser);
 router.patch('/users/:id', user.updateUser);
 
 //Rooms

@@ -1,4 +1,4 @@
-const model = require('../mdoels/room.model');
+const model = require('../models/room.model');
 const roomCtrl = {};
 
 roomCtrl.getRooms = async (req, res) => {
